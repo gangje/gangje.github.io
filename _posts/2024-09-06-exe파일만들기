@@ -1,0 +1,25 @@
+---
+title: "exe 파일 만들기"
+excerpt: " "
+
+categories:
+  - 프로그램(program)
+tags:
+  - 
+
+toc: true
+toc_sticky: true
+ 
+date: 2024-08-04
+last_modified_at: 2024-08-04
+---
+vs코드에서 작성한 프로그램의 실행파일을 만들어보자. 
+![1](https://github.com/user-attachments/assets/d7a96425-1d64-4c91-b802-80d5b5b503cc)
+1.터미널에서 pip install pyinstaller 를 입력하여 pyinstaller 라이브러리를 설치해준다.
+![2](https://github.com/user-attachments/assets/7064a349-e9eb-4d7f-9b91-9853633f653d)
+2.라이브러리를 설치한 후 pyinstaller -F '.\01.실행파일 만들기\hello.py' 를 입력하면 파일이 만들어진다.
+![3](https://github.com/user-attachments/assets/fe5853af-f5ec-42dc-8d92-0b0718dd10a8)
+Building EXE from EXE-00.toc completed successfully.이라 뜨면 성공적으로 실행파일을 만든것이다.
+*간혹 기존 컴퓨터에 깔려있는 백신프로그램으로 인해 파일 생성이 안되는 경우가 있으니 백신 프로그램에서 해당 파일을 제외시키도록 설정을 바꿔주거나 백신 프로그램을 제거하여서 해결해주어야 한다.
+![4](https://github.com/user-attachments/assets/0773fa85-ef6b-410b-822d-64f511c9f7c5)
+3.만들어진 실행파일은 해당 코드가 있는 위치의 dist파일아래에 {파일이름}.exe의 이름으로 생성되어있다.
